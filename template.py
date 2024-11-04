@@ -19,7 +19,7 @@ list_of_files = [
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
-    "config/config.yami",
+    "config/config.yaml",
     "params.yaml",
     "app.py",
     "main.py",
@@ -39,6 +39,7 @@ for filepath in list_of_files:
         logging.info(f"Creating Directory:{filedir} for the file {filename}")
 
     if(not os.path.exists(filepath)) or (os.path.getsize(filename)==0):
+
         with open(filepath,'w') as f:
             pass
             logging.info(f"Creating empty file: {filepath}")
