@@ -15,10 +15,10 @@ data_validation:
   all_required_files: ["train","test","validation"]
 
 
-data transfromation:
+data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsum_dataset
-  tokennizer_name: google/pegasus-cnn_dailymail
+  tokenizer_name: google/pegasus-cnn_dailymail
 
 
 model_trainer:
